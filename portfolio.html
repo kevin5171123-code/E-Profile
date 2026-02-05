@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsui Hoi Chun - E-Portfolio</title>
+    <style>
+        /* 全局設定 */
+        :root {
+            --primary-color: #2c3e50; /* 深藍色，專業感 */
+            --accent-color: #3498db;  /* 亮藍色，科技感 */
+            --bg-light: #f8f9fa;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 標題與導航 */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .student-info {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            color: #bdc3c7;
+        }
+
+        /* 通用區塊樣式 */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* 照片佔位符 */
+        .profile-img-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border: 4px solid white;
+        }
+
+        /* 技能網格 */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .skill-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        /* 作品集 (Artifacts) */
+        .artifact {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .artifact-tag {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+        /* 職涯規劃 */
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: white;
+            border: 3px solid var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .timeline-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        /* 為了截圖方便，增加頁尾留白 */
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            background: #eee;
+            color: #666;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+<div class="profile-img-placeholder">
+    <img src="icon.jpeg" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+</div>
+            <h1>Tsui Hoi Chun</h1>
+            <p>Aspiring Analyst Programmer | .NET & Web Specialist</p>
+            <div class="student-info">
+                Student No.: 240020785 | Class: IT114105/2B
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a final-year student passionate about transforming complex business requirements into efficient software solutions. 
+                With a strong academic foundation in the <strong>SDLC (Software Development Life Cycle)</strong>, I have focused my studies on the <strong>Microsoft technology stack</strong>.
+            </p>
+            <p>
+                I am a self-motivated learner with a strong sense of responsibility. I am eager to join <strong>Legato Solutions Limited</strong> as a Junior Programmer, where I can apply my skills in <strong>C#, ASP.NET, and SQL Server</strong> while growing into a Senior Analyst Programmer.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Personal Competency</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><strong>MVC Model</strong> Architecture</li>
+                        <li><strong>Entity Framework</strong></li>
+                        <li>HTML5, CSS3, JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend & Database</h3>
+                    <ul>
+                        <li><strong>C#</strong>, .NET Core, ASP.NET</li>
+                        <li><strong>Microsoft SQL Server</strong></li>
+                        <li>Java, Jasper Reports basics</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>English & Chinese Communication</li>
+                        <li>Team Coordination</li>
+                        <li>Analytical Troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="artifacts">
+            <h2>Artifacts & Projects</h2>
+
+            <div class="artifact">
+                <h3>Artifact 1: Smile & Sunshine Toy Co. Ltd. Web Application</h3>
+                <p><strong>Description:</strong> A full-stack e-commerce web application developed to manage product inventory and customer orders.</p>
+                <p><strong>My Role:</strong> Implemented the <strong>MVC architecture</strong>, designed the database schema, and handled user authentication.</p>
+                <p><strong>Relevance to Job:</strong> Demonstrates hands-on experience with <strong>Web App Development</strong> and <strong>Entity Framework</strong>.</p>
+                <div>
+                    <span class="artifact-tag">C#</span>
+                    <span class="artifact-tag">ASP.NET MVC</span>
+                    <span class="artifact-tag">SQL Server</span>
+                </div>
+                <br>[Insert Screenshot of Smile & Sunshine Web App Here]
+            </div>
+
+            <div class="artifact">
+                <h3>Artifact 2: Relational Database Design Project</h3>
+                <p><strong>Description:</strong> Designed a normalized database schema for a business case study, including complex T-SQL queries and stored procedures.</p>
+                <p><strong>Relevance to Job:</strong> Proves capability in managing <strong>Relational Database Management Systems (RDBMS)</strong> as required by Legato Solutions.</p>
+                <div>
+                    <span class="artifact-tag">MS SQL Server</span>
+                    <span class="artifact-tag">Database Design</span>
+                </div>
+                <br>[Insert Screenshot of ER Diagram or SQL Queries Here]
+            </div>
+
+            <div class="artifact">
+                <h3>Artifact 3: Collaborative Team Project</h3>
+                <p><strong>Description:</strong> Collaborated with a team of 4 to deliver a software solution under a strict deadline.</p>
+                <p><strong>Relevance to Job:</strong> Highlights my ability to <strong>coordinate with different parties</strong> and work as a <strong>good team player</strong>.</p>
+                <div>
+                    <span class="artifact-tag">Teamwork</span>
+                    <span class="artifact-tag">Communication</span>
+                    <span class="artifact-tag">Git</span>
+                </div>
+                <br>[Insert Screenshot of Team Meeting or Project Board]
+            </div>
+        </section>
+
+        <section id="career-goal">
+            <h2>Career Goal</h2>
+            <p>
+                <strong>Immediate Goal:</strong> To secure the <strong>Junior Programmer</strong> position at Legato Solutions Limited and contribute to ongoing web application projects.
+            </p>
+            <p>
+                <strong>Long-term Goal:</strong> To accumulate "More Experience" as stated in the job ad and evolve into a <strong>Senior / Analyst Programmer</strong> within 3-5 years, specializing in enterprise-level system architecture.
+            </p>
+        </section>
+
+        <section id="career-plan">
+            <h2>Career Plan (Steps & Skills to Learn)</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">Year 1-2: Foundation (Junior Programmer)</div>
+                    <p>Focus: Master internal frameworks, <strong>Jasper Reports</strong>, and collaborate with IT technicians.</p>
+                    <p><i>Skills to Learn: Advanced .NET Core, Efficient SQL Optimization.</i></p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">Year 3-4: Independence (Analyst Programmer)</div>
+                    <p>Focus: Work closely with business users to identify new features and enhance project performance.</p>
+                    <p><i>Skills to Learn: System Design, Project Management, Requirement Analysis.</i></p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">Year 5+: Leadership (Senior Analyst)</div>
+                    <p>Focus: Lead development teams and manage technical solutions delivery.</p>
+                    <p><i>Skills to Learn: Team Leadership, Architecture Patterns.</i></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tsui Hoi Chun. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
